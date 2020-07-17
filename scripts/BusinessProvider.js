@@ -125,3 +125,14 @@ export const NYBusinesses = () => {
   )  
 
 }
+
+export const manufacturingCompanies = () => {
+      return businesses.filter(
+        
+        business => {
+          if (business.companyIndustry === "Manufacturing")
+          return true
+        }
+      )
+
+  }
