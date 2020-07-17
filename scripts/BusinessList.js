@@ -1,11 +1,11 @@
-import {useBusinessList} from "./BusinessProvider.js"
-import {business} from "./Businesses.js"
+import {useBusinesses} from "./BusinessProvider.js"
+import {business} from "./Business.js"
 
-const targetArea = document.querySelectory(".container")
+const targetArea = document.querySelector(".container")
 
 export const activeBusinesses = ( ) => {
 
-    const allBusinessObjects =  useBusinessList( )
+    const allBusinessObjects =  useBusinesses( )
 
     targetArea.innerHTML = `<h2>Active Businesses</h2>`
 

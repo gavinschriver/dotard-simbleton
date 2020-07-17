@@ -1,13 +1,13 @@
-export const business = (businessObject) => 
-{
-` 
+export const business = (businessObject) => {
+return ` 
 <section class=“business”>
-    <h2 class=“business__name”>${businessObject.businessName}</h2>
+    <h2 class=“business__name”>
+    ${businessObject.companyName}
+    </h2>
     <div class=“business__address”>
-${businessObject.addressFullStreet} 
-
-${businessObject.addressCity} ${businessObject.addressStateCode} ${businessObject.addressZipCode}
+    ${businessObject.addressFullStreet} <br>
+    ${businessObject.addressCity} ${businessObject.addressStateCode} ${businessObject.addressZipCode}
   </div>
 </section>
 `
-}
+};
