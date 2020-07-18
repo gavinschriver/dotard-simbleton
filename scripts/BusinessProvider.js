@@ -136,3 +136,17 @@ export const manufacturingCompanies = () => {
       )
 
   }
+
+  export const purchasingAgents = () => {
+    return businesses.map(
+
+        business => {
+          return {
+            agentName: `${business.purchasingAgent.nameFirst} ${business.purchasingAgent.nameLast}`,
+            agentCompany: business.companyName,
+            agentPhoneNumber: business.phoneWork
+          }
+        }
+
+    )
+  } 

@@ -10,7 +10,7 @@ export const activeBusinesses = ( ) => {
     
     const allBusinessObjects =  useBusinesses( )
 
-    targetArea.innerHTML = `<h2>Active Businesses</h2>`
+    targetArea.innerHTML = `<h2 class=listHeader>Active Businesses</h2>`
 
     allBusinessObjects.forEach(
         businessObject => targetArea.innerHTML += business(businessObject)
@@ -24,7 +24,7 @@ export const listNYBusinesses = ( ) => {
 
     const NYBusinessObjects = NYBusinesses()
 
-    targetArea.innerHTML += `<h2>New York Businesses</h2>`
+    targetArea.innerHTML += `<h2 class=listHeader>New York Businesses</h2>`
 
     NYBusinessObjects.forEach(
         NYBusinessObj => targetArea.innerHTML += business(NYBusinessObj)
@@ -37,7 +37,7 @@ export const listManufacturingCompanies = ( ) => {
 
     const manufacturingCompanyObjects = manufacturingCompanies()
 
-    targetArea.innerHTML += `<h2>Manufacturing Companies</h2>`
+    targetArea.innerHTML += `<h2 class=listHeader>Manufacturing Companies</h2>`
 
     manufacturingCompanyObjects.forEach(
         manufacturingComopanyObj => targetArea.innerHTML += business(manufacturingComopanyObj)
