@@ -6,7 +6,7 @@ import {business} from "./Business.js"
 
 export const activeBusinesses = ( ) => {
 
-    const targetArea = document.querySelector(".container")
+    const targetArea = document.querySelector(".businessList--all")
     
     const allBusinessObjects =  useBusinesses( )
 
