@@ -1,6 +1,6 @@
 export const business = (businessObject) => {
 return ` 
-<section class=business>
+<section class=list--item>
     <h3 class=business__name>
     ${businessObject.companyName}
     </h3>
