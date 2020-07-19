@@ -1,5 +1,4 @@
 .business{
- border-bottom: 3px solid grey  
 } 
 
 .businessList--all {
@@ -17,3 +16,11 @@
 .business__address {
 }
 
+.list--item {
+    border-bottom: 3px solid grey
+}
+
+.agent__company, .agent__phone {
+        font-weight: bold;
+        line-height: 2em;
+    }
