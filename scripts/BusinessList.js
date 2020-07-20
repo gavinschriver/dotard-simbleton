@@ -39,20 +39,19 @@ export const listManufacturingCompanies = () => {
   );
 };
 
-// event madness
+// event madness!!!!!
 
 const companySearchResultArticle = document.querySelector(".foundCompanies");
+
+//assign result of calling useBusinesses() to var called copyOfBusinesses (an array of all the businesses, to be used in remaining code)
 const copyOfBusinesses = useBusinesses();
 
-document
-  .querySelector("#companySearch")
-  .addEventListener("keypress", (sweetEventBro) => {
+//add an event handler called sweetEventBro to the onkeypress event of the element in the document with the id #companyseach
+document.querySelector("#companySearch").addEventListener("keypress", (sweetEventBro) => {
+    //if enter is pressed
     if (sweetEventBro.charCode === 13) {
-      //assign result of calling useBusinesses() to var called copyOfBusinesses (an array of all the businesses, to be used in remaining code)
 
-      //begin a function that compares value of the target of the 'sweetEventBro' function with the company name for each business and, if true, returns the whole object found at that array position as a var called returnMatchingBusiness
-
-      /*  */
+      //begin a function that compares value of the target of the 'sweetEventBro' function (aka whatever was input into #companySearch) with the first or last name of the purchasing agent for each business and, if true, returns the whole object found at that array position as a var called returnMatchingBusiness
 
       const returnMatchingBusiness = (myBusinesses) =>
         myBusinesses.find((business) =>
